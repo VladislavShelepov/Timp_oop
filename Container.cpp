@@ -64,7 +64,13 @@ void Container::Out(ofstream& ofst) {
     {
         ofst << i << ": ";
         Current->plnt->Out_Data(ofst);
+        OutCountOfLetters(ofst);
         Current = Current->next;
         i++;
     } while (Current != Head);
+}
+
+void Container::OutCountOfLetters(ofstream& ofst)
+{
+    ofst << "count of consonants: " << Current->plnt->CountLetters() << endl;
 }
