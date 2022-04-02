@@ -7,7 +7,7 @@ struct Node {
     Plant* plnt;
     Node* next;
     Node* prev;
-    Node(Plant* newfigure);
+    Node(Plant* newplant);
 };
 
 class Container {
