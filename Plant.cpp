@@ -1,6 +1,7 @@
 #include "Plant.h"
 #include "Tree.h"
 #include "Bush.h"
+#include "Flower.h"
 
 Plant* Plant::In(ifstream& ifst) {
     Plant* pt;
@@ -13,6 +14,10 @@ Plant* Plant::In(ifstream& ifst) {
     else if (k == 2)
     {
         pt = new bush;
+    }
+    else if (k == 3)
+    {
+        pt = new flower;
     }
     else
     {
