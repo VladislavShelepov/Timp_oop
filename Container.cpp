@@ -59,6 +59,7 @@ void Container::Out(ofstream& ofst) {
     {
         return;
     }
+    Sort();
     Current = Head;
     do 
     {
@@ -73,4 +74,21 @@ void Container::Out(ofstream& ofst) {
 void Container::OutCountOfLetters(ofstream& ofst)
 {
     ofst << "count of consonants: " << Current->plnt->CountLetters() << endl;
+}
+
+void Container::Sort()
+{
+    Node* curr1 = Head;
+    Node* curr2 = Head;
+    do {
+        curr2 = curr1->next;
+        while (curr2 != Head) {
+            if (curr1->plnt->Compare(*curr2->plnt))
+            {
+                swap(curr1->plnt, curr2->plnt);
+            }
+            curr2 = curr2->next;
+        }
+        curr1 = curr1->next;
+    } while (curr1 != Head);
 }

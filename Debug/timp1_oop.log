@@ -1,2 +1,9 @@
-﻿  Container.cpp
-  timp1_oop.vcxproj -> C:\Users\Shele\source\repos\timp1_oop\Debug\timp1_oop.exe
+﻿  Bush.cpp
+C:\Users\Shele\Documents\GitHub\Timp_oop\Bush.cpp(92,20): warning C4018: <: несоответствие типов со знаком и без знака
+  Container.cpp
+  Plant.cpp
+  timp1_oop.cpp
+  Tree.cpp
+C:\Users\Shele\Documents\GitHub\Timp_oop\Tree.cpp(14,20): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
+  timp1_oop.vcxproj -> C:\Users\Shele\Documents\GitHub\Timp_oop\Debug\timp1_oop.exe

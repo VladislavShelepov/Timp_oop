@@ -19,6 +19,7 @@ public:
     void Out(ofstream& ofst);
     void OutCountOfLetters(ofstream& ofst);
     void Clear();
+    void Sort();
     Container();
     ~Container() { Clear(); }
 };
