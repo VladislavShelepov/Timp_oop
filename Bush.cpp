@@ -86,3 +86,7 @@ void bush::Out_Data(ofstream& ofst) {
 		break;
 	}
 }
+void bush::OutTrees(ofstream& ofst)
+{
+	ofst << endl;
+}

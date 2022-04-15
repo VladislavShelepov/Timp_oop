@@ -17,6 +17,7 @@ class Container {
 public:
     void In(ifstream& ifst);
     void Out(ofstream& ofst);
+    void OutTrees(ofstream& ofst);
     void Clear();
     Container();
     ~Container() { Clear(); }

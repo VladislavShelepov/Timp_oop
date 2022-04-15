@@ -68,3 +68,18 @@ void Container::Out(ofstream& ofst) {
         i++;
     } while (Current != Head);
 }
+void Container::OutTrees(ofstream& ofst) {
+    int i = 1;
+    if (Head == NULL)
+    {
+        return;
+    }
+    Current = Head;
+    do
+    {
+        ofst << i << ": ";
+        if (Current->plnt)Current->plnt->OutTrees(ofst);
+        Current = Current->next;
+        i++;
+    } while (Current != Head);
+}
