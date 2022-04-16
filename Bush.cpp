@@ -1,7 +1,7 @@
 #include "Bush.h"
 void bush::In_Data(ifstream& ifst) {
     ifst >> name;
-	int t;
+	int t,o;
 	ifst >> t;
 	switch (t)
 	{
@@ -40,6 +40,22 @@ void bush::In_Data(ifstream& ifst) {
 		break;
 	case 12:
 		blossom = December;
+		break;
+	}
+	ifst >> o;
+	switch (o)
+	{
+	case 1:
+		origin = tundra;
+		break;
+	case 2:
+		origin = desert;
+		break;
+	case 3:
+		origin = steppe;
+		break;
+	case 4:
+		origin = forest;
 		break;
 	}
 }
@@ -83,6 +99,21 @@ void bush::Out_Data(ofstream& ofst) {
 		break;
 	case 11:
 		ofst << "It is a bush. It's flowering month is December." << endl;
+		break;
+	}
+	switch (origin)
+	{
+	case 0:
+		ofst << "It grows in tundra." << endl;
+		break;
+	case 1:
+		ofst << "It grows in desert." << endl;
+		break;
+	case 2:
+		ofst << "It grows in steppe." << endl;
+		break;
+	case 3:
+		ofst << "It grows in forest." << endl;
 		break;
 	}
 }
