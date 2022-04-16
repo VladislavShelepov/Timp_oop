@@ -73,3 +73,7 @@ int flower::CountLetters() {
 	}
 	return cnt;
 };
+void flower::OutTrees(ofstream& ofst)
+{
+	ofst << endl;
+}

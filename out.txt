@@ -16,5 +16,12 @@ count of consonants: 3
 It is a tree. It's age is 10 days.
 It grows in desert.
 count of consonants: 3
+Only Trees: 
+1: 
+2: 
+3: 
+4: Name: derevo
+It is a tree. It's age is 10 days.
+It grows in desert.
 Empty container. 
 Container contains 0 elements.

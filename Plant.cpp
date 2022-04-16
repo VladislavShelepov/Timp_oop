@@ -30,3 +30,7 @@ bool Plant::Compare(Plant& p)
 {
     return CountLetters() < p.CountLetters();
 }
+void Plant::OutTrees(ofstream& ofst)
+{
+    ofst << endl;
+}

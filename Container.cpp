@@ -91,6 +91,7 @@ void Container::Sort()
         }
         curr1 = curr1->next;
     } while (curr1 != Head);
+}
 void Container::OutTrees(ofstream& ofst) {
     int i = 1;
     if (Head == NULL)
