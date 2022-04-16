@@ -127,3 +127,8 @@ int bush::CountLetters() {
 	}
 	return cnt;
 };
+}
+void bush::OutTrees(ofstream& ofst)
+{
+	ofst << endl;
+}

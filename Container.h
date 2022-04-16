@@ -18,6 +18,7 @@ public:
     void In(ifstream& ifst);
     void Out(ofstream& ofst);
     void OutCountOfLetters(ofstream& ofst);
+    void OutTrees(ofstream& ofst);
     void Clear();
     void Sort();
     Container();

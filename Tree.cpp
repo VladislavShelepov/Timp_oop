@@ -49,3 +49,7 @@ int tree::CountLetters() {
 	}
 	return cnt;
 }
+void tree::OutTrees(ofstream& ofst)
+{
+    Out_Data(ofst);
+}

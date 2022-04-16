@@ -14,5 +14,6 @@ public:
     void In_Data(ifstream& ifst);
     void Out_Data(ofstream& ofst);
     int CountLetters();
+    void OutTrees(ofstream& ofst);
     bush() {};
 };

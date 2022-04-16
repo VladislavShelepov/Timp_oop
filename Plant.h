@@ -10,6 +10,7 @@ public:
     virtual void Out_Data(ofstream& ofst) = 0;
     virtual int CountLetters() = 0;
     bool Compare(Plant& p);
+    virtual void OutTrees(ofstream& ofst) = 0;
 //protected:
 //    Plant() {};
 };
