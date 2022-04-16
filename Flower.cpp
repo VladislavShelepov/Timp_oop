@@ -15,6 +15,23 @@ void flower::In_Data(ifstream& ifst) {
 		t = wild;
 		break;
 	}
+	int o;
+	ifst >> o;
+	switch (o)
+	{
+	case 1:
+		origin = tundra;
+		break;
+	case 2:
+		origin = desert;
+		break;
+	case 3:
+		origin = steppe;
+		break;
+	case 4:
+		origin = forest;
+		break;
+	}
 }
 
 void flower::Out_Data(ofstream& ofst) {
@@ -29,6 +46,21 @@ void flower::Out_Data(ofstream& ofst) {
 		break;
 	case 2:
 		ofst << "It is a flower. It's wild." << endl;
+		break;
+	}
+	switch (origin)
+	{
+	case 0:
+		ofst << "It grows in tundra." << endl;
+		break;
+	case 1:
+		ofst << "It grows in desert." << endl;
+		break;
+	case 2:
+		ofst << "It grows in steppe." << endl;
+		break;
+	case 3:
+		ofst << "It grows in forest." << endl;
 		break;
 	}
 }

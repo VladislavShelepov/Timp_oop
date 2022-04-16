@@ -1,2 +1,9 @@
-﻿  Flower.cpp
-  timp1_oop.vcxproj -> C:\Users\Shele\source\repos\timp1_oop\Debug\timp1_oop.exe
+﻿  Bush.cpp
+  Container.cpp
+  Flower.cpp
+  Plant.cpp
+  timp1_oop.cpp
+  Tree.cpp
+  Создание кода...
+  LINK : не найден или не выполнена сборка C:\Users\Shele\Documents\GitHub\Timp_oop\Debug\timp1_oop.exe при последней инкрементной компоновке; выполняется полная компоновка
+  timp1_oop.vcxproj -> C:\Users\Shele\Documents\GitHub\Timp_oop\Debug\timp1_oop.exe
