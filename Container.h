@@ -17,7 +17,9 @@ class Container {
 public:
     void In(ifstream& ifst);
     void Out(ofstream& ofst);
+    void OutCountOfLetters(ofstream& ofst);
     void Clear();
+    void Sort();
     Container();
     ~Container() { Clear(); }
 };

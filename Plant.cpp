@@ -26,3 +26,7 @@ Plant* Plant::In(ifstream& ifst) {
     pt->In_Data(ifst);
     return pt;
 }
+bool Plant::Compare(Plant& p)
+{
+    return CountLetters() < p.CountLetters();
+}

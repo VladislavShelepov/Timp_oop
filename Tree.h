@@ -11,5 +11,6 @@ class tree : public Plant {
 public:
     void In_Data(ifstream& ifst);
     void Out_Data(ofstream& ofst);
+    int CountLetters();
     tree() {};
 };
