@@ -59,7 +59,7 @@ void Container::Out(ofstream& ofst) {
     {
         return;
     }
-    Sort();
+    //Sort();
     Current = Head;
     do 
     {

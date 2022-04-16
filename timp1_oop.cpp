@@ -22,6 +22,10 @@ int main(int argc, char* argv[])
     c.In(ifst);
     ofst << "Filled container. " << endl;
     c.Out(ofst);
+    c.Sort();
+    ofst << endl;
+    ofst << "Container sorted. " << endl;
+    c.Out(ofst);
     ofst << "Only Trees: " << endl;
     c.OutTrees(ofst);
     c.Clear();
