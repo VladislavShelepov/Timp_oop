@@ -34,3 +34,12 @@ void Plant::OutTrees(ofstream& ofst)
 {
     ofst << endl;
 }
+int Plant::CountLetters() {
+    string letters = "bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ";
+    int cnt = 0;
+    for (int i = 0; i < name.length(); i++)
+    {
+        if (letters.find(name[i]) < letters.length())cnt++;
+    }
+    return cnt;
+}

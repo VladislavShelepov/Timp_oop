@@ -64,15 +64,6 @@ void flower::Out_Data(ofstream& ofst) {
 		break;
 	}
 }
-int flower::CountLetters() {
-	string letters = "bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ";
-	int cnt = 0;
-	for (int i = 0; i < name.length(); i++)
-	{
-		if (letters.find(name[i]) < letters.length())cnt++;
-	}
-	return cnt;
-};
 void flower::OutTrees(ofstream& ofst)
 {
 	ofst << endl;

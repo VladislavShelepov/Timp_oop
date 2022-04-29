@@ -40,15 +40,7 @@ void tree::Out_Data(ofstream& ofst) {
 		break;
 	}
 }
-int tree::CountLetters() {
-	string letters = "bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ";
-	int cnt = 0;
-	for (int i = 0; i < name.length(); i++)
-	{
-		if (letters.find(name[i]) < letters.length())cnt++;
-	}
-	return cnt;
-}
+
 void tree::OutTrees(ofstream& ofst)
 {
     Out_Data(ofst);
