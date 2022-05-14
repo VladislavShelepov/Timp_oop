@@ -3,14 +3,14 @@
 #include <fstream>
 using namespace std;
 
-class flower : public Plant {
+class Flower : public Plant {
 
-    enum type { domestic, garden, wild };
-    type t;
+    enum kind { domestic, garden, wild };
+    kind type;
 
 public:
-    void In_Data(ifstream& ifst);
-    void Out_Data(ofstream& ofst);
-    void OutTrees(ofstream& ofst);
-    flower() {};
+    void inData(ifstream& ifst);
+    void outData(ofstream& ofst);
+    void outTrees(ofstream& ofst);
+    Flower() {};
 };

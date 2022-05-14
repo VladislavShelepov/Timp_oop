@@ -8,12 +8,12 @@ public:
     string name;
     enum place { tundra, desert, steppe, forest };
     place origin;
-    static Plant* In(ifstream& ifst);
-    virtual void In_Data(ifstream& ifst) = 0;
-    virtual void Out_Data(ofstream& ofst) = 0;
-    int CountLetters();
-    bool Compare(Plant& p);
-    virtual void OutTrees(ofstream& ofst);
+    static Plant* in(ifstream& ifst);
+    virtual void inData(ifstream& ifst) = 0;
+    virtual void outData(ofstream& ofst) = 0;
+    int countLetters();
+    bool compare(Plant& p);
+    virtual void outTrees(ofstream& ofst);
 //protected:
 //    Plant() {};
 };

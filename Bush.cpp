@@ -1,9 +1,9 @@
 #include "Bush.h"
-void bush::In_Data(ifstream& ifst) {
+void Bush::inData(ifstream& ifst) {
     ifst >> name;
-	int t,o;
-	ifst >> t;
-	switch (t)
+	int mounthOfBlossom, originOfPlant;
+	ifst >> mounthOfBlossom;
+	switch (mounthOfBlossom)
 	{
 	case 1:
 		blossom = January;
@@ -42,8 +42,8 @@ void bush::In_Data(ifstream& ifst) {
 		blossom = December;
 		break;
 	}
-	ifst >> o;
-	switch (o)
+	ifst >> originOfPlant;
+	switch (originOfPlant)
 	{
 	case 1:
 		origin = tundra;
@@ -60,7 +60,7 @@ void bush::In_Data(ifstream& ifst) {
 	}
 }
 
-void bush::Out_Data(ofstream& ofst) {
+void Bush::outData(ofstream& ofst) {
 	ofst << "Name: " << name << endl;
 	switch (blossom)
 	{
@@ -118,7 +118,7 @@ void bush::Out_Data(ofstream& ofst) {
 	}
 
 }
-void bush::OutTrees(ofstream& ofst)
+void Bush::outTrees(ofstream& ofst)
 {
 	ofst << endl;
 }

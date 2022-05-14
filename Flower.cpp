@@ -1,23 +1,24 @@
 #include "Flower.h"
-void flower::In_Data(ifstream& ifst) {
+void Flower::inData(ifstream& ifst) 
+{
 	ifst >> name;
-	int a;
-	ifst >> a;
-	switch (a)
+	int typeOfFlower;
+	ifst >> typeOfFlower;
+	switch (typeOfFlower)
 	{
 	case 1:
-		t = domestic;
+		type = domestic;
 		break;
 	case 2:
-		t = garden;
+		type = garden;
 		break;
 	case 3:
-		t = wild;
+		type = wild;
 		break;
 	}
-	int o;
-	ifst >> o;
-	switch (o)
+	int originOfPlant;
+	ifst >> originOfPlant;
+	switch (originOfPlant)
 	{
 	case 1:
 		origin = tundra;
@@ -34,9 +35,10 @@ void flower::In_Data(ifstream& ifst) {
 	}
 }
 
-void flower::Out_Data(ofstream& ofst) {
+void Flower::outData(ofstream& ofst) 
+{
 	ofst << "Name: " << name << endl;
-	switch (t)
+	switch (type)
 	{
 	case 0:
 		ofst << "It is a flower. It's domestic." << endl;
@@ -64,7 +66,7 @@ void flower::Out_Data(ofstream& ofst) {
 		break;
 	}
 }
-void flower::OutTrees(ofstream& ofst)
+void Flower::outTrees(ofstream& ofst)
 {
 	ofst << endl;
 }

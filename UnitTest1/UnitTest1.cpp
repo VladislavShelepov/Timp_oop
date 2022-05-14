@@ -15,9 +15,9 @@ namespace UnitTest1
 	TEST_METHOD(TestCountLetters)
 	{
 		ifstream ifst("C:/Users/Shele/Documents/GitHub/Timp_oop/UnitTest1/testCountLetters.txt");
-		Plant* pl = Plant::In(ifst);
+		Plant* pl = Plant::in(ifst);
 
-		int res = pl->CountLetters();
+		int res = pl->countLetters();
 		int exp = 5;
 		Assert::AreEqual(exp, res);
 	}
@@ -25,15 +25,15 @@ namespace UnitTest1
 	{
 		ifstream ifst("C:/Users/Shele/Documents/GitHub/Timp_oop/UnitTest1/testCountLetters.txt");
 		Plant* pl1, * pl2;
-		pl1 = new tree;
-		pl2 = new tree;
+		pl1 = new Tree;
+		pl2 = new Tree;
 
-		pl1->In(ifst);
-		pl2->In(ifst);
+		pl1->in(ifst);
+		pl2->in(ifst);
 		Node* n1, * n2;
 		n1 = new Node(pl1);
 		n2 = new Node(pl2);
-		bool res = n1->plnt->Compare(*n2->plnt);
+		bool res = n1->plnt->compare(*n2->plnt);
 		bool exp = false;
 		Assert::AreEqual(exp, res);
 	}
@@ -43,17 +43,17 @@ namespace UnitTest1
 		ifstream ifst("C:/Users/Shele/Documents/GitHub/Timp_oop/UnitTest1/inTest.txt");
 		ofstream ofst("C:/Users/Shele/Documents/GitHub/Timp_oop/UnitTest1/expTestIn.txt");
 
-		tree* t = new tree;
-		bush* b = new bush;
-		flower* f = new flower;
+		Tree* t = new Tree;
+		Bush* b = new Bush;
+		Flower* f = new Flower;
 
-		t->In_Data(ifst);
-		b->In_Data(ifst);
-		f->In_Data(ifst);
+		t->inData(ifst);
+		b->inData(ifst);
+		f->inData(ifst);
 
-		t->Out_Data(ofst);
-		b->Out_Data(ofst);
-		f->Out_Data(ofst);
+		t->outData(ofst);
+		b->outData(ofst);
+		f->outData(ofst);
 
 		ifstream ifst1("C:/Users/Shele/Documents/GitHub/Timp_oop/UnitTest1/expInTest.txt");
 		ifstream ifst2("C:/Users/Shele/Documents/GitHub/Timp_oop/UnitTest1/expTestIn.txt");
@@ -75,8 +75,8 @@ namespace UnitTest1
 		bool res = true;
 		bool exp = true;
 
-		c.In(ifst);
-		c.Out(ofst);
+		c.in(ifst);
+		c.out(ofst);
 
 		ifstream ifst1("C:/Users/Shele/Documents/GitHub/Timp_oop/UnitTest1/expOutputTest.txt");
 		ifstream ifst2("C:/Users/Shele/Documents/GitHub/Timp_oop/UnitTest1/outputTest.txt");
@@ -97,9 +97,9 @@ namespace UnitTest1
 		bool res = true;
 		bool exp = true;
 
-		c.In(ifst);
-		c.Clear();
-		c.Out(ofst);
+		c.in(ifst);
+		c.clear();
+		c.out(ofst);
 
 
 		ifstream ifst1("C:/Users/Shele/Documents/GitHub/Timp_oop/UnitTest1/clearTest.txt");
@@ -119,9 +119,9 @@ namespace UnitTest1
 		Container c;
 
 
-		c.In(ifst);
-		c.Sort();
-		c.Out(ofst);
+		c.in(ifst);
+		c.sort();
+		c.out(ofst);
 
 		ifstream ifst1("C:/Users/Shele/Documents/GitHub/Timp_oop/UnitTest1/outSortTest.txt");
 		ifstream ifst2("C:/Users/Shele/Documents/GitHub/Timp_oop/UnitTest1/expOutSortTest.txt");
@@ -142,8 +142,8 @@ namespace UnitTest1
 		bool res = true;
 		bool exp = true;
 
-		c.In(ifst);
-		c.OutTrees(ofst);
+		c.in(ifst);
+		c.outTrees(ofst);
 
 		ifstream ifst1("C:/Users/Shele/Documents/GitHub/Timp_oop/UnitTest1/outTreesTest.txt");
 		ifstream ifst2("C:/Users/Shele/Documents/GitHub/Timp_oop/UnitTest1/expOutTreesTest.txt");

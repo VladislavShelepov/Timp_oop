@@ -1,11 +1,12 @@
 #include  "Tree.h"
 
-void tree::In_Data(ifstream& ifst) {
+void Tree::inData(ifstream& ifst) 
+{
     ifst >> name;
     ifst >> age;
-    int o;
-    ifst >> o;
-    switch (o)
+    int originOfPlant;
+    ifst >> originOfPlant;
+    switch (originOfPlant)
     {
 	case 1:
 		origin = tundra;
@@ -21,7 +22,8 @@ void tree::In_Data(ifstream& ifst) {
 		break;
     }
 }
-void tree::Out_Data(ofstream& ofst) {
+void Tree::outData(ofstream& ofst) 
+{
     ofst << "Name: " << name << endl;
     ofst << "It is a tree. It's age is " << age << " days." << endl;
 	switch (origin)
@@ -41,7 +43,7 @@ void tree::Out_Data(ofstream& ofst) {
 	}
 }
 
-void tree::OutTrees(ofstream& ofst)
+void Tree::outTrees(ofstream& ofst)
 {
-    Out_Data(ofst);
+    outData(ofst);
 }

@@ -3,43 +3,47 @@
 #include "Bush.h"
 #include "Flower.h"
 
-Plant* Plant::In(ifstream& ifst) {
+Plant* Plant::in(ifstream& ifst) 
+{
     Plant* pt;
-    int k;
-    ifst >> k;
-    if (k == 1)
+    int typeOfPlant;
+    ifst >> typeOfPlant;
+    if (typeOfPlant == 1)
     {
-        pt = new tree;
+        pt = new Tree;
     }
-    else if (k == 2)
+    else if (typeOfPlant == 2)
     {
-        pt = new bush;
+        pt = new Bush;
     }
-    else if (k == 3)
+    else if (typeOfPlant == 3)
     {
-        pt = new flower;
+        pt = new Flower;
     }
     else
     {
         return 0;
     }
-    pt->In_Data(ifst);
+    pt->inData(ifst);
     return pt;
 }
-bool Plant::Compare(Plant& p)
+
+bool Plant::compare(Plant& p)
 {
-    return CountLetters() < p.CountLetters();
+    return countLetters() < p.countLetters();
 }
-void Plant::OutTrees(ofstream& ofst)
+
+void Plant::outTrees(ofstream& ofst)
 {
     ofst << endl;
 }
-int Plant::CountLetters() {
-    string letters = "bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ";
+
+int Plant::countLetters() {
+    string LETTERS = "bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ";
     int cnt = 0;
     for (int i = 0; i < name.length(); i++)
     {
-        if (letters.find(name[i]) < letters.length())cnt++;
+        if (LETTERS.find(name[i]) < LETTERS.length())cnt++;
     }
     return cnt;
 }

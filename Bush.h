@@ -4,12 +4,13 @@
 #include <fstream>
 using namespace std;
 
-class bush : public Plant {
+class Bush : public Plant 
+{
     enum month { January, February, March, April, May, June, July, August, September, October, November, December };
     month blossom;
 public:
-    void In_Data(ifstream& ifst);
-    void Out_Data(ofstream& ofst);
-    void OutTrees(ofstream& ofst);
-    bush() {};
+    void inData(ifstream& ifst);
+    void outData(ofstream& ofst);
+    void outTrees(ofstream& ofst);
+    Bush() {};
 };

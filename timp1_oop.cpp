@@ -1,8 +1,6 @@
 ﻿#include <iostream>
 #include <fstream>
-
 using namespace std;
-
 #include "Container.h"
 
 int main(int argc, char* argv[])
@@ -13,6 +11,7 @@ int main(int argc, char* argv[])
             << endl;
         exit(1);
     }
+
     ifstream ifst(argv[1]);
     ofstream ofst(argv[2]);
     cout << "Start" << endl;   
@@ -23,18 +22,18 @@ int main(int argc, char* argv[])
     ifst.open(argv[1]);
     Container c;
 
-    c.In(ifst);
+    c.in(ifst);
     ofst << "Filled container. " << endl;
-    c.Out(ofst);
-    c.Sort();
+    c.out(ofst);
+    c.sort();
     ofst << endl;
     ofst << "Container sorted. " << endl;
-    c.Out(ofst);
+    c.out(ofst);
     ofst << "Only Trees: " << endl;
-    c.OutTrees(ofst);
-    c.Clear();
+    c.outTrees(ofst);
+    c.clear();
     ofst << "Empty container. " << endl;
-    c.Out(ofst);
+    c.out(ofst);
 
     cout << "Stop" << endl;
     system("pause");

@@ -3,25 +3,27 @@
 #include "Plant.h"
 using namespace std;
 
-struct Node {
+struct Node 
+{
     Plant* plnt;
     Node* next;
     Node* prev;
     Node(Plant* newplant);
 };
 
-class Container {
-    Node* Current;
-    Node* Head;
+class Container 
+{
+    Node* current;
+    Node* head;
     int length;
 public:
-    void In(ifstream& ifst);
-    void Out(ofstream& ofst);
-    void OutCountOfLetters(ofstream& ofst);
-    void OutTrees(ofstream& ofst);
-    void Clear();
-    void Sort();
+    void in(ifstream& ifst);
+    void out(ofstream& ofst);
+    void outCountOfLetters(ofstream& ofst);
+    void outTrees(ofstream& ofst);
+    void clear();
+    void sort();
     Container();
-    ~Container() { Clear(); }
+    ~Container() { clear(); }
 };
 bool fileCheck(ifstream& ifst, ofstream& ofst);
