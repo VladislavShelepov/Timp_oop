@@ -24,3 +24,4 @@ public:
     Container();
     ~Container() { Clear(); }
 };
+bool fileCheck(ifstream& ifst, ofstream& ofst);

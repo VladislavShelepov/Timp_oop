@@ -15,8 +15,12 @@ int main(int argc, char* argv[])
     }
     ifstream ifst(argv[1]);
     ofstream ofst(argv[2]);
-    cout << "Start" << endl;
+    cout << "Start" << endl;   
 
+    fileCheck(ifst, ofst);
+
+    ifst.close();
+    ifst.open(argv[1]);
     Container c;
 
     c.In(ifst);

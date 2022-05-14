@@ -1,1 +1,9 @@
-﻿  timp1_oop.vcxproj -> C:\Users\Shele\Documents\GitHub\Timp_oop\Debug\timp1_oop.exe
+﻿  Container.cpp
+C:\Users\Shele\Documents\GitHub\Timp_oop\Container.cpp(142,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Shele\Documents\GitHub\Timp_oop\Container.cpp(183,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Shele\Documents\GitHub\Timp_oop\Container.cpp(212,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Shele\Documents\GitHub\Timp_oop\Container.cpp(241,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Shele\Documents\GitHub\Timp_oop\Container.cpp(270,21): warning C4018: <: несоответствие типов со знаком и без знака
+  timp1_oop.cpp
+  Создание кода...
+  timp1_oop.vcxproj -> C:\Users\Shele\Documents\GitHub\Timp_oop\Debug\timp1_oop.exe
